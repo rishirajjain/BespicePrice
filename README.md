@@ -1,2 +1,0 @@
-# BespicePrice
-Price list
