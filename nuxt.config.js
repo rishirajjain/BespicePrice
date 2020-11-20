@@ -36,12 +36,12 @@ export default {
         href: "https://fonts.googleapis.com/css2?family=Montserrat"
       }
     ],
-    // link: [
-    //   {
-    //     rel: "stylesheet",
-    //     href: "https://fonts.googleapis.com/css2?family=Montserrat+Alternates"
-    //   }
-    // ]
+    link: [
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Montserrat+Alternates"
+      }
+    ]
   },
 
   generate: {

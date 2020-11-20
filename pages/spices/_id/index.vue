@@ -3,7 +3,7 @@
     <div class="container flex justify-between w-11/12">
       <div class="flex flex-col w-full">
         <nuxt-link to="/" class="underline mb-10">Back</nuxt-link>
-        <div class="flex justify-between">
+        <div class="flex justify-between items-center">
           <div class="font-bold text-3xl">{{ spiceDataIndi.name }}</div>
           {{ formatDate(spiceDataIndi.date) }}
         </div>

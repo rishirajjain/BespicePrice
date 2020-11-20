@@ -1,12 +1,12 @@
 {
-  "name": "rishirajjain",
+  "name": "bharatexotics",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
+    "generate": "nuxt generate",
     "start": "nuxt start",
-    "export": "nuxt export",
     "serve": "nuxt serve",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "lint": "npm run lint:style",

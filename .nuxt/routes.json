@@ -3,12 +3,14 @@
     "name": "spices-id",
     "path": "/spices/:id",
     "component": "E:\\\\rish code\\\\BespicePrice\\\\pages\\\\spices\\\\_id\\\\index.vue",
-    "chunkName": "pages/spices/_id/index"
+    "chunkName": "pages/spices/_id/index",
+    "_name": "_4305d705"
   },
   {
     "name": "index",
     "path": "/",
     "component": "E:\\\\rish code\\\\BespicePrice\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_162726fa"
   }
 ]
