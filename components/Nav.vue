@@ -3,7 +3,7 @@
     <div class="flex justify-center">
       <div class="container flex justify-between w-11/12">
         <nuxt-link to="/" class="flex justify-center items-center">
-          <img src="/bespiceslogo.svg" alt="BESpices" class="w-12" />
+          <img src="/bespiceslogo.png" alt="BESpices" class="w-12" />
           <div class="uppercase md:text-xl font-semibold ml-2 logoText">
             bharatexotics
           </div>

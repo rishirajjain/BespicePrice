@@ -1,5 +1,12 @@
 [
   {
+    "name": "spices",
+    "path": "/spices",
+    "component": "E:\\\\rish code\\\\BespicePrice\\\\pages\\\\spices\\\\index.vue",
+    "chunkName": "pages/spices/index",
+    "_name": "_e14ea196"
+  },
+  {
     "name": "spices-id",
     "path": "/spices/:id",
     "component": "E:\\\\rish code\\\\BespicePrice\\\\pages\\\\spices\\\\_id\\\\index.vue",
