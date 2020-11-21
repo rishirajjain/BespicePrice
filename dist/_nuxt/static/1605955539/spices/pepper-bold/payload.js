@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/spices/pepper-bold", {data:[{}],fetch:[],mutations:[]});
