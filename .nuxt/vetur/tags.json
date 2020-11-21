@@ -17,6 +17,12 @@
   "LazyNav": {
     "description": "Auto imported from components/Nav.vue"
   },
+  "Profile": {
+    "description": "Auto imported from components/profile.vue"
+  },
+  "LazyProfile": {
+    "description": "Auto imported from components/profile.vue"
+  },
   "SpiceDetails": {
     "description": "Auto imported from components/spiceDetails.vue"
   },

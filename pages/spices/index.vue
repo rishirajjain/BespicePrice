@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen">
+  <div v-if="auth.authorised">
     <div class="flex flex-wrap justify-center">
       <div class="container flex justify-between w-11/12">
         <div class="w-full flex flex-col bg-white">
@@ -23,6 +23,19 @@
       </div>
     </div>
   </div>
+  <div v-else class="h-screen">
+    <div class="flex flex-wrap justify-center">
+      <div class="container flex justify-between w-11/12">
+        <div class="w-full flex flex-col">
+          <div
+            class="text-2xl md:text-3xl p-4 border-2 border-gray-100 rounded"
+          >
+            Sorry You are not authorised to View this page!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -36,7 +49,7 @@ export default {
     spicelist,
   },
   computed: {
-    ...mapState(["spiceData"]),
+    ...mapState(["spiceData", "auth"]),
   },
   methods: {
     ...mapActions(["loadSpiceData"]),
