@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen">
+  <div>
     <div class="flex flex-wrap justify-center">
       <div class="container flex justify-between w-11/12">
         <div class="w-full flex flex-col bg-white">

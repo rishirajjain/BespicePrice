@@ -16,7 +16,8 @@ export const actions = {
     return this.$storyapi
       .get("cdn/stories", {
         version: process.env.NODE_ENV == "production" ? "published" : "draft",
-        starts_with: "spices/"
+        starts_with: "spices/",
+        sort_by: "content.Name:asc"
       })
       .then(res => {
 

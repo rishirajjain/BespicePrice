@@ -1,4 +1,10 @@
 {
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "LazyFooter": {
+    "description": "Auto imported from components/Footer.vue"
+  },
   "Loading": {
     "description": "Auto imported from components/loading.vue"
   },
