@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/spices/cardammom-9mm", {data:[{}],fetch:[],mutations:[]});

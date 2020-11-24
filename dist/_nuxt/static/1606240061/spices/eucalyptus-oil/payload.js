@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/spices/eucalyptus-oil", {data:[{}],fetch:[],mutations:[]});

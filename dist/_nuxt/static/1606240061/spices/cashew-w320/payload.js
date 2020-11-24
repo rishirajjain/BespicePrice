@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/spices/cashew-w320", {data:[{}],fetch:[],mutations:[]});
