@@ -56,7 +56,7 @@ export default {
 
     onSuccess(data) {
       this.authData(data);
-      this.$router.push("/spices");
+      // this.$router.push("/spices");
     },
     onFailed(data) {
       console.log("Failed", data);

@@ -2,7 +2,8 @@ var md5 = require('md5');
 export const state = () => ({
   spiceData: {},
   spiceDataIndi: {},
-  auth: {}
+  auth: {},
+  gallery: {},
 });
 export const mutations = {
   SET_DATA_SPICE: (state, data) => {
@@ -13,6 +14,9 @@ export const mutations = {
   },
   SET_DATA_AUTH: (state, data) => {
     state.auth = data;
+  },
+  SET_GALLERY: (state, data) => {
+    state.gallery = data;
   }
 };
 
@@ -25,7 +29,6 @@ export const actions = {
         sort_by: "content.Name:asc"
       })
       .then(res => {
-
         commit(
           "SET_DATA_SPICE",
           res.data.stories.map(wp => {
@@ -33,7 +36,8 @@ export const actions = {
               id: wp.slug,
               name: wp.content.Name,
               specification: wp.content.Specification,
-              SellerData: wp.content.SellerData.tbody
+
+
             };
           })
         );
@@ -49,7 +53,7 @@ export const actions = {
         commit("SET_DATA_S_INDI", {
           name: res.data.story.content.Name,
           specification: res.data.story.content.Specification,
-          SellerData: res.data.story.content.SellerData.tbody,
+          SellerData: res.data.story.content.sellerData,
           date: res.data.story.content.date
         });
       });
@@ -70,8 +74,35 @@ export const actions = {
     })
 
     return admin;
-  }
+  },
+  setGallery({ commit }) {
+    return this.$storyapi
+      .get("cdn/stories/retail/", {
+        version: process.env.NODE_ENV == "production" ? "published" : "draft"
+      })
+      .then(res => {
+        console.log(res);
+        console.log(res.data.story.content.priceGallery);
+        commit("SET_GALLERY", {
+          imdata: res.data.story.content.priceGallery,
 
+        });
+      });
+  },
+  setGalleryWholesale({ commit }) {
+    return this.$storyapi
+      .get("cdn/stories/wholesale/", {
+        version: process.env.NODE_ENV == "production" ? "published" : "draft"
+      })
+      .then(res => {
+        console.log(res);
+        console.log(res.data.story.content.priceGallery);
+        commit("SET_GALLERY", {
+          imdata: res.data.story.content.priceGallery,
+
+        });
+      });
+  }
 
 }
 

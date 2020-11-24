@@ -1,24 +1,28 @@
 <template>
   <div>
     <div class="relative inline-block text-left">
-      <div>
-        <button
-          type="button"
-          class="pointer-events-auto text-base inline-flex justify-center w-full leading-5 focus:outline-none transition ease-in-out duration-150"
-          @click="showMenu = !showMenu"
-          aria-haspopup="true"
-          aria-expanded="true"
-        >
-          <img :src="auth.img" alt="profile thumb" class="rounded-full w-8" />
-        </button>
-        <button
-          v-if="showMenu"
-          @click="showMenu = false"
-          tabindex="-1"
-          class="fixed inset-0 h-full w-full z-30 cursor-default focus:outline-none"
-        ></button>
+      <div class="flex items-center">
+        <div class="hidden md:block title font-semibold mr-3">
+          <span class="font-normal">Welcome, </span>{{ auth.name }}
+        </div>
+        <div class="self-end">
+          <button
+            type="button"
+            class="pointer-events-auto text-base inline-flex justify-center w-full leading-5 focus:outline-none transition ease-in-out duration-150"
+            @click="showMenu = !showMenu"
+            aria-haspopup="true"
+            aria-expanded="true"
+          >
+            <img :src="auth.img" alt="profile thumb" class="rounded-full w-8" />
+          </button>
+          <button
+            v-if="showMenu"
+            @click="showMenu = false"
+            tabindex="-1"
+            class="fixed inset-0 h-full w-full z-30 cursor-default focus:outline-none"
+          ></button>
+        </div>
       </div>
-
       <div
         class="origin-top-right absolute z-50 right-0 mt-2 rounded-md shadow-lg"
         v-if="showMenu"
@@ -36,7 +40,7 @@
                 {{ auth.name }}
               </div>
               <div class="text-base text-gray-700">{{ auth.email }}</div>
-              <div v-if="auth">
+              <div>
                 <googleSignIn
                   :clientId="'501525525432-jok4m6ci0c4pdlpiu2dneto6gnbjuclm.apps.googleusercontent.com'"
                   :successCallBack="onSuccess"
@@ -48,7 +52,7 @@
             </div>
             <button
               id="switchAc"
-              class="w-full self-center mt-4 rounded hover:bg-gray-100 py-4 px-2"
+              class="w-full self-center mt-4 rounded bg-gray-100 hover:bg-gray-300 py-4 px-2"
             >
               Switch Account
             </button>

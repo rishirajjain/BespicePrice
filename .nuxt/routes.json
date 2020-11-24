@@ -1,10 +1,24 @@
 [
   {
+    "name": "retail",
+    "path": "/retail",
+    "component": "E:\\\\rish code\\\\BespicePrice\\\\pages\\\\retail.vue",
+    "chunkName": "pages/retail",
+    "_name": "_b9d610ea"
+  },
+  {
     "name": "spices",
     "path": "/spices",
     "component": "E:\\\\rish code\\\\BespicePrice\\\\pages\\\\spices\\\\index.vue",
     "chunkName": "pages/spices/index",
     "_name": "_e14ea196"
+  },
+  {
+    "name": "wholesale",
+    "path": "/wholesale",
+    "component": "E:\\\\rish code\\\\BespicePrice\\\\pages\\\\wholesale.vue",
+    "chunkName": "pages/wholesale",
+    "_name": "_59326ea6"
   },
   {
     "name": "spices-id",

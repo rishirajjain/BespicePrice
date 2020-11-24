@@ -11,6 +11,7 @@
         <div class="mt-12">
           <div class="flex justify-between">
             <div class="font-bold text-xl">Name of seller</div>
+            <div class="font-bold text-xl">Date</div>
             <div class="font-bold text-xl">Price(PerKG)</div>
           </div>
           <spiceDetails :spiceData="spiceDataIndi" />
